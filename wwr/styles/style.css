@@ -1,0 +1,114 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    color: #3498db; /* Soft blue for navigation links */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #2c3e50; /* Dark navy blue for hover effect on navigation links */
+    color: #ecf0f1; /* Light grey for navigation links when hovered */
+}
+
+#hero-msg h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark navy blue for hero message heading */
+}
+
+#hero-msg h4 {
+    text-align: center;
+    color: #2c3e50; /* Dark navy blue for h4 in hero message */
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #ecf0f1; /* Very light grey for the background element to keep it subtle */
+}
+
+body {
+    background-color: #f5f5f5; /* Light grey for a clean, neutral background */
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.9); /* Semi-transparent navy blue for a professional look */
+}
+
+.book {
+    background-color: #3498db; /* Soft blue for elements with class "book" */
+    color: #ffffff; /* White text for better contrast */
+    text-decoration: none;
+}
+
+.join {
+    background-color: #e67e22; /* Warm orange for elements with class "join" */
+    color: #ffffff; /* White text for better contrast */
+    text-decoration: none;
+}
+
+.book:hover {
+    background-color: #2980b9; /* Slightly darker blue for hover effect on "book" elements */
+    color: #ffffff; /* White text for better contrast */
+}
+
+.join:hover {
+    background-color: #d35400; /* Slightly darker orange for hover effect on "join" elements */
+    color: #ffffff; /* White text for better contrast */
+}
+
+.msg {
+    background-color: #16a085; /* Soft teal for elements with class "msg" */
+}
+
+.msg h2 {
+    color: #ffffff; /* White text for h2 in msg elements for better contrast */
+}
+
+.msg p {
+    color: #ffffff; /* White text for p in msg elements for better contrast */
+}
+
+footer {
+    background-color: #2c3e50; /* Dark navy blue for the footer to match the hover color of navigation links */
+    color: #327889; /* Light grey text for better contrast */
+}
+
+footer a {
+    color: #1d2d69; /* Light grey text for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3498db; /* Soft blue for footer links when hovered */
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adds some padding to the body */
+}
+
+.main_image { 
+    width: 300px; /* Increase the width of the main image */
+    padding-bottom:20px;
+    background-color: gray;
+    position: relative;
+}
+
+.ice {
+    width: 20px; /* Set the desired width of the other images */
+    border-radius: 50%; /* Makes the images circular */
+    background-color: gray ;
+
+}

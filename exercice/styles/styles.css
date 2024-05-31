@@ -1,20 +1,45 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; /* Adds some padding to the body */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%; 
+  
 }
 
-.main_image { 
-    width: 300px; /* Increase the width of the main image */
-    padding-bottom:20px;
-    background-color: gray;
+.image_container {
+    grid-column: 1/3; 
     position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-.ice {
-    width: 20px; /* Set the desired width of the other images */
-    border-radius: 50%; /* Makes the images circular */
-    background-color: gray ;
+.cherry {
+    width: 50%; 
+    height: auto; 
+    position: absolute; 
+    top: -50px; 
+    left: 20px; 
+    z-index: 2; 
+}
 
+.header_text {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 60px; 
+    color: black; 
+    grid-column: 1 / 3; 
+    height: 200px; 
+    z-index: 1; 
+    position: relative; 
+}
+
+.text {
+    font-size: 40px; 
+    color: red; 
+    grid-column: 2 / 2; 
+    align-self: end; 
+    padding-top: 50px; 
+    background-color:  gray; 
+    
 }

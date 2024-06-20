@@ -1,42 +1,61 @@
-body{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    background-color: rgb(106, 190, 250);
+    background-color: #333;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
-}
-main{
-    max-width: 90;
-    margin: 0 auto;
-    
-}
-#bannerherro{
-color: white;
 }
 
-#mylist {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-    counter-reset: my-counter; /* Initialize the counter */
+#main_image {
+    width: 100%;
+    height: auto;
 }
 
-#mylist li {
-    list-style-type: none; /* Remove default bullet */
+.content {
+    padding: 20px;
 }
 
-#mylist li:before {
-    counter-increment: my-counter; /* Increment the counter for each list item */
-    content: counter(my-counter) ". "; /* Display the counter content */
-    margin-right: 5px; /* Adjust spacing between counter and text */
-}
-#myimage{
-    width: 200px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image horizontally */
-    margin: 0 auto 20px; /* Add some space below the image */
+#first_text {
+    color: rgb(60, 60, 160);
+    font-size: 12px;
+    margin: 0;
 }
 
-#quote{
+#second_text {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+#main_article {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    display: flex;
+    background-color: #3B5998;
     color: white;
-    font-size: xx-large;
+}
+
+.footer-item {
+    flex: 1;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.footer-item:last-child {
+    border-right: none;
 }

@@ -1,43 +1,184 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>DataScienceCentral - Tutorials</title>
-    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe Match</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .nav li {
+    float: left;
+    font-size: 50px;
+  }
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .nav li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
+  }
+  .main-content {
+    padding: 20px;
+  }
+  .content {
+    padding: 40px;
+    font-size: 80px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .content:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  .content img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .content .image_1{
+
+    margin-right: 20px;
+    margin-top: 50px;
+
+
+
+  }
+
+  .content .image_2 {
+    float: left;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+  .content .paragraph_1 {
+    padding: 20px;
+    margin-top: 200px;
+  }
+  .content img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #2c3e50;
+    color: #327889;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer a {
+    color: #1d2d69;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #3498db;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  footer .social img {
+    padding-top: 15px;
+  }
+  h2 {
+    color: #4CAF50;
+  }
+  p {
+    line-height: 1.6;
+  }
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>DataScienceCentral</h1>
-        <h2>Tutorials</h2>
-    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tutorial.html">Tutorials</a>
-        <a href="community-jobs.html">Community & Jobs</a>
-    </nav>
+<div class="header">
+  <h1>
+    <img src="pictures/logo.png" alt="website_logo">
+  </h1>
+</div>
 
-    <main>
-        <h2>Welcome to the Tutorials Section</h2>
-        <p>
-            Dive into our comprehensive tutorials and guides. Our Tutorials section offers a wide range of content designed to help you master data science.
-            Whether you're learning the basics or exploring advanced techniques, you'll find step-by-step instructions, practical examples, and expert tips to enhance your skills.
-            Topics include data manipulation, machine learning, statistical analysis, and more. Each tutorial is crafted to be easy to follow, ensuring that you can learn at your own pace and
-            apply what you've learned in real-world scenarios.
-        </p>
-        <img src="pictures/pexels-googledeep_learnig.png" alt="image for page">
-        <img src="pictures/ml_tutorial_image.png" alt="image for page">
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="tutorial.html">Tutorial</a></li>
+  <li><a href="community-jobs.html">Community</a></li>
+</ul>
 
-        <p>wireframe</p>
-        <img src="pictures/Capture d'écran 2024-06-22 142749.png" alt="tutorial wireframe">
-    </main>
+<div class="main-content">
+  <div class="content">
+    <h2>Tutorial</h2>
 
-    <footer>
-        <p>&copy; 2024 DataScienceCentral. All rights reserved.</p>
-        <a href="site-plan.html">Site Plan</a>
-    </footer>
+    <p>Dive into our comprehensive tutorials and guides. 
+        Our Tutorials section offers a wide range of content designed to help you master data science.
+         Whether you're learning the basics or exploring advanced techniques, you'll find step-by-step instructions, 
+         practical examples, and expert tips to enhance your skills. Topics include data manipulation, machine learning,
+         statistical analysis, and more. Each tutorial is crafted to be easy to follow, ensuring that you can learn at your own pace
+         and apply what you've learned in real-world scenarios.</p>    
+    <img class="image_1"  src="pictures/ml_tutorial_image.png" alt="Machine Learning Tutorial">
+
+    <p class="paragraph_1">Machine learning is a branch of artificial intelligence (AI) that focuses on building systems that can learn from and make decisions based on data. 
+       Instead of being explicitly programmed to perform a task, machine learning algorithms use statistical techniques to identify patterns and make predictions or decisions.
+       Machine learning is used in various applications, such as recommendation systems, image and speech recognition, fraud detection, and autonomous vehicles. 
+       By continuously learning from new data, machine learning models can improve their performance over time, making them powerful tools for solving complex problems.</p>
+    
+    <img class="image_2" src="pictures/pexels-googledeep_learnig.png" alt="Statistical Analysis">
+
+    <p class="paragraph_2">Statistical analysis is a fundamental component of data science that involves collecting, exploring, and interpreting data to uncover patterns and trends. 
+       It uses mathematical theories and methodologies to analyze and draw conclusions from data sets. In data science, statistical analysis helps in making informed decisions by providing insights into data distributions, 
+       relationships between variables, and the likelihood of future events. Techniques such as hypothesis testing, regression analysis, and variance analysis are commonly used to validate models and ensure their accuracy.</p>
+    
+  </div>
+</div>
+
+<footer>
+    <p>© 2024 DataScienceCentral. All rights reserved.</p>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="tutorial.html">Tutorial</a></p>
+    <p><a href="community-jobs.html">Community</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="pictures/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="pictures/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="pictures/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+
 </body>
-
 </html>

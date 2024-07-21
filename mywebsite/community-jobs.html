@@ -1,42 +1,180 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>DataScienceCentral - Community & Jobs</title>
-    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe Match</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #2b7e8c;
+    color: #333;
+  }
+  .header {
+    background-color: #b2992c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .title{
+
+    color: #2b7e8c;
+  }
+  .nav {
+    background-color: #333;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .main-content {
+    padding: 20px;
+  }
+  .content {
+    padding: 40px;
+    font-size: 80px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .content:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  .content img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  .content .image_1 {
+    margin-right: 20px;
+    margin-top: 50px;
+   
+  }
+  .content .image_2 {
+    float: left;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+  .content .paragraph_1 {
+    padding: 20px;
+    margin-top: 200px;
+  }
+  .content img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #2c3e50;
+    color: #327889;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer a {
+    color: #1d2d69;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #3498db;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  footer .social img {
+    padding-top: 15px;
+  }
+  h2 {
+    color: #4CAF50;
+  }
+  p {
+    line-height: 1.6;
+  }
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>DataScienceCentral</h1>
-        <h2>Community & Jobs</h2>
-    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tutorial.html">Tutorials</a>
-        <a href="community-jobs.html">Community & Jobs</a>
-    </nav>
+<div class="header">
+  <h1>
+    <img src="pictures/logo.png" alt="website_logo">
+  </h1>
+</div>
 
-    <main>
-        <h2>Welcome to the Community & Jobs Section</h2>
-        <p>
-            Join our community forums to connect with other data science enthusiasts, share ideas, and collaborate on projects. The Community & Jobs section is the heart of DataScienceCentral,
-            where members can engage in discussions, ask questions, and provide answers. Additionally, our job board features the latest data science job postings, allowing you to find the perfect
-            opportunity to advance your career. Whether you're looking for a new role or seeking advice from peers, this section is dedicated to supporting your professional growth and development.
-        </p>
-        <img src="pictures/community_image.png" alt="image for page3">
-        <img src="pictures/comunity_image.png" alt="image for page3">
-        
-        <p>wireframe</p>
-        <img src="pictures/JOBS_COMMUNITY_WIREFRAME.png" alt="community-jobs_wireframe">
-    </main>
+<ul class="nav">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="tutorial.html">Tutorial</a></li>
+  <li><a href="community-jobs.html">Community</a></li>
+</ul>
 
-    <footer>
-        <p>&copy; 2024 DataScienceCentral. All rights reserved.</p>
-        <a href="site-plan.html">Site Plan</a>
-    </footer>
+<div class="main-content">
+  <div class="content">
+    <h2 class="title">Job and community board</h2>
+
+    <p>Join our community forums to connect with other data science enthusiasts, share ideas, and collaborate on projects. The Community & Jobs section is the heart of DataScienceCentral,
+        where members can engage in discussions, ask questions, and provide answers. Additionally, our job board features the latest data science job postings, allowing you to find the perfect
+        opportunity to advance your career. Whether you're looking for a new role or seeking advice from peers, this section is dedicated to supporting your professional growth and development.</p>    
+
+    <img class="image_1"  src="pictures/community_image.png" alt="Machine Learning Tutorial">
+
+    <p class="paragraph_1">Our community forums are a vibrant space where data science enthusiasts from all backgrounds come together to share their knowledge and experiences. Whether you're a beginner looking for guidance or an expert eager to mentor others, you'll find a welcoming environment here. Engage in lively discussions, ask questions, and provide answers to help others on their data science journey. Our forums are designed to foster collaboration and continuous learning, making it easy to stay updated with the latest trends and techniques in the field.</p>
+    
+    <img class="image_2" src="pictures/comunity_image.png" alt="Statistical Analysis">
+
+    <p class="paragraph_2">In addition to our forums, we offer a comprehensive job board that features the latest data science job postings from top companies around the world. Whether you're looking for a full-time position, a part-time role, or freelance opportunities, our job board is the perfect place to find your next career move. Each listing provides detailed information about the role, required qualifications, and application process, ensuring you have all the information you need to make an informed decision.</p>
+    
+  </div>
+</div>
+
+<footer>
+    <p>© 2024 DataScienceCentral. All rights reserved.</p>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="tutorial.html">Tutorial</a></p>
+    <p><a href="community-jobs.html">Community</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="pictures/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="pictures/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="pictures/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+
 </body>
-
 </html>

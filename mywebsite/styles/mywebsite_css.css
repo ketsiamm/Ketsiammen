@@ -29,7 +29,7 @@ body {
 }
 .nav li a {
     display: block;
-    color: #f2f2f2;
+    color: #6e981f;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@ body {
     color: black;
 }
 .nav li a.active {
-    background-color: #04AA6D;
+    background-color: #068c5b;
     color: white;
 }
 .main-content {
@@ -51,7 +51,7 @@ body {
     padding: 40px;
     font-size: 80px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(19, 216, 22, 0.809);
     border-radius: 8px;
     transition: box-shadow 0.3s, transform 0.3s;
 }

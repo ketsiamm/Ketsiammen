@@ -1,0 +1,38 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Dataset folders (optional: adjust if you're using something like kagglehub)
+*.csv
+*.tsv
+*.xlsx
+*.zip
+.kagglehub/
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter config
+.jupyter/

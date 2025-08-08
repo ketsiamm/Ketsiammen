@@ -1,57 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataScienceCentral</title>
-    <link rel="stylesheet" href="styles/mywebsite_css.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ketsiammen Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
-
 <body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Project Overview</h2>
+      <nav class="nav-links">
+        <a href="cleansing.html">Data Cleansing</a>
+        <a href="exploration.html">Data Exploration</a>
+        <a href="story_telling.html">Story Telling</a>
+        <a href="ml.html">Machine Learning</a>
+        <a href="full_stack.html">Full Stack</a>
+        <a href="competition.html">Competition</a>
+      </nav>
 
-    <div class="header">
-        <h1>
-            <img src="pictures/logo.png" alt="DataScienceCentral Logo">
-        </h1>
-    </div>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    </aside>
 
-    <ul class="nav">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="tutorial.html">Tutorials</a></li>
-        <li><a href="community-jobs.html">Community & Jobs</a></li>
-    </ul>
+    <main class="main-content">
+      <!-- Intro Section -->
+      <div class="intro">
+        <img src="pictures/peter.jpeg" alt="Avatar" class="avatar" />
+        <h1 class="animated-text">Hello! I'm Ketsiammen</h1>
+        <p class="animated-text">A data science enthusiast with a passion for turning data into insight.</p>
+      </div>
 
-    <div class="main-content">
-        <div class="content">
-            <h2>Welcome to DataScienceCentral</h2>
-            <p>DataScienceCentral is designed to be the ultimate resource for anyone interested in the field of data science. Whether you're a beginner just getting started, a professional looking to sharpen your skills, or a seasoned expert wanting to stay updated with the latest trends, our website caters to all levels of expertise. Our mission is to provide comprehensive, accessible, and up-to-date information that empowers our users to excel in data science.</p>
-            <img class="image_1" src="pictures/main_page_ds.png" alt="Data Science Illustration">
-            
-            <p class="paragraph_1">Welcome to DataScienceCentral, your ultimate resource for data science. Here, you will find tutorials, guides, industry news, and a vibrant community to help you on your data science journey. Our homepage is designed to provide you with a quick overview of what we offer. Stay updated with the latest trends, explore our featured tutorials, and join the conversation in our community forums. Whether you are just starting out or are an experienced professional, DataScienceCentral is here to support you every step of the way.</p>
-            
-            <img class="image_2" src="pictures/tutorial_1.png" alt="Tutorial Overview">
+      <!-- About Me Section -->
+      <section class="about-me">
+        <h2 class="animated-text">About Me</h2>
+        <p class="animated-text">
+          I am a data scientist focused on solving real-world problems using data. With a strong foundation in machine learning, data analysis, and visualization, I am always eager to learn new techniques and improve my skills.
+        </p>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section class="featured-projects">
+        <h2 class="animated-text">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Customer Segmentation</h3>
+            <p>Used clustering to understand customer groups for targeted marketing.</p>
+            <a href="#">Read more →</a>
+          </div>
+          <div class="project-card">
+            <h3>Sales Forecasting</h3>
+            <p>Implemented predictive models to forecast sales trends.</p>
+            <a href="#">Read more →</a>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <footer>
-        <p>© 2024 DataScienceCentral. All rights reserved.</p>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="tutorial.html">Tutorials</a></p>
-        <p><a href="community-jobs.html">Community & Jobs</a></p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="pictures/facebook.png" alt="Facebook Icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="pictures/twitter.png" alt="Twitter Icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="pictures/instagram.png" alt="Instagram Icon">
-            </a>
+      <!-- Skills Section -->
+      <section class="skills">
+        <h2 class="animated-text">Skills</h2>
+        <div class="skill">Python
+          <div class="bar"><div class="fill" style="width: 95%"></div></div>
         </div>
-    </footer>
+        <div class="skill">R
+          <div class="bar"><div class="fill" style="width: 70%"></div></div>
+        </div>
+        <div class="skill">SQL
+          <div class="bar"><div class="fill" style="width: 80%"></div></div>
+        </div>
+        <div class="skill">Machine Learning
+          <div class="bar"><div class="fill" style="width: 85%"></div></div>
+        </div>
+      </section>
 
+      <!-- Contact Section -->
+      <section class="contact">
+        <h2 class="animated-text">Contact Me</h2>
+        <p class="animated-text">Feel free to reach out to me through the following platforms:</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/ketsiammen-monthe-yann-peter-b690ab263" target="_blank" class="social-icon">
+            <img src="pictures/linkedin-brands.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/ketsiamm" target="_blank" class="social-icon">
+            <img src="pictures/github-brands.svg" alt="GitHub" />
+          </a>
+        </div>
+       <!-- Formspree Contact Form -->
+       <h3>Or send me a message:</h3>
+       <form action="https://formspree.io/f/meogrjdk" method="POST">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required />
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required />
+
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="4" required></textarea>
+
+         <button type="submit">Send Message</button>
+       </form>
+     </section>
+   </main>
+ </div>
+
+ <script>
+   if (localStorage.getItem('theme') === 'dark') {
+     document.body.classList.add('dark');
+   }
+
+   function toggleDarkMode() {
+     document.body.classList.toggle('dark');
+     const mode = document.body.classList.contains('dark') ? 'dark' : 'light';
+     localStorage.setItem('theme', mode);
+   }
+
+   // Scroll Animations
+   const elements = document.querySelectorAll('.animated-text');
+   const onScroll = () => {
+     elements.forEach(element => {
+       if (element.getBoundingClientRect().top < window.innerHeight * 0.75) {
+         element.classList.add('scrolled');
+       }
+     });
+   };
+   window.addEventListener('scroll', onScroll);
+   onScroll(); // Initialize on page load
+ </script>
 </body>
-
 </html>
